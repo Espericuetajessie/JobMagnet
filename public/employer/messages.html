@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messages — JobMagnet</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    * { font-family: 'Inter', sans-serif; }
+    .nav-link { transition: all 0.15s; }
+    .nav-link:hover { background: rgba(5,150,105,0.1); color: #059669; }
+    .nav-link.active { background: rgba(5,150,105,0.15); color: #059669; font-weight: 600; }
+    .msg-row:hover { background-color: #f9fafb; }
+    .msg-row { transition: background-color 0.15s; }
+  </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+
+  <!-- Sidebar -->
+  <div class="fixed inset-y-0 left-0 w-64 bg-white border-r border-gray-100 z-30 shadow-sm">
+    <div class="p-6 border-b border-gray-100">
+      <a href="/" class="flex items-center gap-2">
+        <div class="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center">
+          <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+        </div>
+        <span class="font-bold text-gray-900">JobMagnet</span>
+      </a>
+    </div>
+    <div class="p-4">
+      <div class="mb-6 p-3 bg-blue-50 rounded-xl">
+        <p class="text-sm font-semibold text-gray-900" id="user-name">Loading...</p>
+        <p class="text-xs text-blue-600 mt-0.5 font-medium">Employer Account</p>
+      </div>
+      <nav class="space-y-1">
+        <a href="/employer/dashboard.html" class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm text-gray-600">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"/></svg>Dashboard</a>
+        <a href="/employer/talent.html" class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm text-gray-600">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7"/></svg>Talent Search</a>
+        <a href="/employer/messages.html" class="nav-link active flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8"/></svg>Messages</a>
+      </nav>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 p-4 border-t border-gray-100">
+      <button onclick="logout()" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm text-gray-500 hover:text-red-600 hover:bg-red-50 transition-all">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/></svg>
+        Log Out
+      </button>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <div class="ml-64 p-8">
+    <div class="max-w-4xl mx-auto">
+      <div class="mb-6">
+        <h1 class="text-2xl font-bold text-gray-900">Messages</h1>
+        <p class="text-gray-500 mt-1">View messages you've sent to candidates</p>
+      </div>
+
+      <!-- Tab nav -->
+      <div class="flex gap-2 mb-6 border-b border-gray-200">
+        <button onclick="switchTab('sent')" id="tab-sent" class="tab-btn px-5 py-2.5 text-sm font-semibold text-emerald-600 border-b-2 border-emerald-600 -mb-px transition-all">
+          Sent Messages
+        </button>
+        <button onclick="switchTab('inbox')" id="tab-inbox" class="tab-btn px-5 py-2.5 text-sm font-semibold text-gray-500 border-b-2 border-transparent -mb-px hover:text-gray-700 transition-all">
+          Inbox
+        </button>
+      </div>
+
+      <div id="messages-container">
+        <div class="text-center py-12 text-gray-400">Loading messages...</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Message Detail Modal -->
+  <div id="detail-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 backdrop-blur-sm">
+    <div class="bg-white rounded-3xl shadow-2xl w-full max-w-lg mx-4 p-6">
+      <div class="flex items-center justify-between mb-5">
+        <h2 class="text-lg font-bold text-gray-900" id="detail-subject">Message</h2>
+        <button onclick="closeDetail()" class="text-gray-400 hover:text-gray-600 p-1">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="mb-4 p-3 bg-gray-50 rounded-xl flex items-center justify-between">
+        <div>
+          <p class="text-xs text-gray-500">To/From:</p>
+          <p class="text-sm font-semibold text-gray-900" id="detail-person"></p>
+        </div>
+        <p class="text-xs text-gray-400" id="detail-date"></p>
+      </div>
+      <div class="bg-gray-50 rounded-xl p-4 max-h-64 overflow-y-auto">
+        <p class="text-sm text-gray-700 whitespace-pre-wrap" id="detail-content"></p>
+      </div>
+      <button onclick="closeDetail()" class="w-full mt-4 border border-gray-200 py-2.5 rounded-xl font-semibold text-sm text-gray-700 hover:bg-gray-50 transition-colors">Close</button>
+    </div>
+  </div>
+
+  <script>
+    const token = localStorage.getItem('jm_token');
+    const user = JSON.parse(localStorage.getItem('jm_user') || '{}');
+    if (!token) window.location.href = '/login.html';
+    if (user.role !== 'employer') window.location.href = '/seeker/dashboard.html';
+
+    document.getElementById('user-name').textContent = user.company_name || user.email;
+
+    let currentTab = 'sent';
+
+    function switchTab(tab) {
+      currentTab = tab;
+      document.querySelectorAll('.tab-btn').forEach(b => {
+        b.className = 'tab-btn px-5 py-2.5 text-sm font-semibold text-gray-500 border-b-2 border-transparent -mb-px hover:text-gray-700 transition-all';
+      });
+      document.getElementById(`tab-${tab}`).className = 'tab-btn px-5 py-2.5 text-sm font-semibold text-emerald-600 border-b-2 border-emerald-600 -mb-px transition-all';
+      loadMessages();
+    }
+
+    async function loadMessages() {
+      const container = document.getElementById('messages-container');
+      const endpoint = currentTab === 'sent' ? '/api/messages/sent' : '/api/messages';
+      const res = await fetch(endpoint, { headers: { 'Authorization': `Bearer ${token}` } });
+      const msgs = await res.json();
+
+      if (!Array.isArray(msgs) || msgs.length === 0) {
+        container.innerHTML = `
+          <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-12 text-center">
+            <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8"/></svg>
+            </div>
+            <p class="font-semibold text-gray-500">${currentTab === 'sent' ? 'No messages sent yet' : 'No messages received'}</p>
+            <p class="text-sm text-gray-400 mt-1">${currentTab === 'sent' ? 'Go to Talent Search to message candidates' : ''}</p>
+            ${currentTab === 'sent' ? '<a href="/employer/talent.html" class="inline-block mt-4 bg-emerald-600 text-white px-5 py-2 rounded-xl font-semibold text-sm hover:bg-emerald-700 transition-colors">Search Talent</a>' : ''}
+          </div>`;
+        return;
+      }
+
+      container.innerHTML = `
+        <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+          ${msgs.map(msg => {
+            const person = currentTab === 'sent'
+              ? `${msg.recipient?.first_name || ''} ${msg.recipient?.last_name || ''}`.trim() || msg.recipient?.email || 'Candidate'
+              : (msg.sender?.company_name || `${msg.sender?.first_name || ''} ${msg.sender?.last_name || ''}`.trim() || 'Sender');
+            const date = new Date(msg.created_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+            return `
+              <div class="msg-row border-b border-gray-50 last:border-0 cursor-pointer"
+                onclick="openDetail('${msg.id}', '${(msg.subject || 'No Subject').replace(/'/g, "\\'")}', '${person.replace(/'/g, "\\'")}', '${date}', '${msg.content.replace(/'/g, "\\'").replace(/\n/g, '\\n')}')">
+                <div class="flex items-center gap-4 px-5 py-4">
+                  <div class="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 text-emerald-700 font-bold text-sm">
+                    ${person[0] || '?'}
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between mb-0.5">
+                      <p class="font-semibold text-gray-900 text-sm">${person}</p>
+                      <p class="text-xs text-gray-400">${date}</p>
+                    </div>
+                    <p class="text-xs font-medium text-gray-700">${msg.subject || 'No Subject'}</p>
+                    <p class="text-xs text-gray-400 truncate">${msg.content}</p>
+                  </div>
+                </div>
+              </div>`;
+          }).join('')}
+        </div>`;
+    }
+
+    function openDetail(id, subject, person, date, content) {
+      document.getElementById('detail-subject').textContent = subject;
+      document.getElementById('detail-person').textContent = person;
+      document.getElementById('detail-date').textContent = date;
+      document.getElementById('detail-content').textContent = content.replace(/\\n/g, '\n');
+      const modal = document.getElementById('detail-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeDetail() {
+      document.getElementById('detail-modal').classList.add('hidden');
+      document.getElementById('detail-modal').classList.remove('flex');
+    }
+
+    function logout() {
+      localStorage.removeItem('jm_token');
+      localStorage.removeItem('jm_user');
+      window.location.href = '/';
+    }
+
+    loadMessages();
+  </script>
+</body>
+</html>

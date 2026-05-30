@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employer Dashboard — JobMagnet</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    * { font-family: 'Inter', sans-serif; }
+    .nav-link { transition: all 0.15s; }
+    .nav-link:hover { background: rgba(5,150,105,0.1); color: #059669; }
+    .nav-link.active { background: rgba(5,150,105,0.15); color: #059669; font-weight: 600; }
+    .card-hover { transition: transform 0.2s, box-shadow 0.2s; }
+    .card-hover:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+  </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+
+  <!-- Sidebar -->
+  <div class="fixed inset-y-0 left-0 w-64 bg-white border-r border-gray-100 z-30 shadow-sm">
+    <div class="p-6 border-b border-gray-100">
+      <a href="/" class="flex items-center gap-2">
+        <div class="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center">
+          <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+        </div>
+        <span class="font-bold text-gray-900">JobMagnet</span>
+      </a>
+    </div>
+    <div class="p-4">
+      <div class="mb-6 p-3 bg-blue-50 rounded-xl">
+        <p class="text-sm font-semibold text-gray-900" id="user-name">Loading...</p>
+        <p class="text-xs text-blue-600 mt-0.5 font-medium" id="sub-status">Employer Account</p>
+      </div>
+      <!-- Admin View Toggle -->
+      <div id="admin-toggle" class="hidden mb-4 p-3 bg-emerald-50 rounded-xl border border-emerald-100">
+        <p class="text-xs font-bold text-emerald-800 mb-2">ADMIN VIEW</p>
+        <div class="flex gap-2">
+          <button onclick="switchView('seeker')" id="btn-seeker-view" class="flex-1 text-xs px-3 py-2 rounded-lg font-semibold bg-white text-emerald-600 border border-emerald-200 hover:bg-emerald-100">Job Seeker</button>
+          <button onclick="switchView('employer')" id="btn-employer-view" class="flex-1 text-xs px-3 py-2 rounded-lg font-semibold bg-emerald-600 text-white">Employer</button>
+        </div>
+      </div>
+      <nav class="space-y-1">
+        <a href="/employer/dashboard.html" class="nav-link active flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"/></svg>
+          Dashboard
+        </a>
+        <a href="/employer/talent.html" class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm text-gray-600">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          Talent Search
+        </a>
+        <a href="/employer/messages.html" class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm text-gray-600">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          Messages
+          <span id="unread-badge" class="hidden bg-emerald-500 text-white text-xs font-bold px-1.5 py-0.5 rounded-full min-w-[18px] text-center ml-auto"></span>
+        </a>
+      </nav>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 p-4 border-t border-gray-100">
+      <button onclick="logout()" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm text-gray-500 hover:text-red-600 hover:bg-red-50 transition-all">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/></svg>
+        Log Out
+      </button>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="ml-64 p-8">
+    <div class="max-w-5xl mx-auto">
+      <!-- Paywall for non-subscribers -->
+      <div id="paywall" class="hidden">
+        <div class="bg-white rounded-3xl border border-gray-100 shadow-lg p-10 text-center max-w-2xl mx-auto">
+          <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+          </div>
+          <h1 class="text-3xl font-bold text-gray-900 mb-3">Subscribe to Access Talent</h1>
+          <p class="text-gray-500 mb-6 max-w-md mx-auto">Your account is ready! Complete your subscription to search our talent database and message certified candidates.</p>
+          <div class="bg-gray-50 rounded-2xl p-5 mb-6 text-left">
+            <div class="flex items-center gap-3 mb-4">
+              <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span class="text-gray-700 font-medium">Full talent database access</span>
+            </div>
+            <div class="flex items-center gap-3 mb-4">
+              <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span class="text-gray-700 font-medium">Filter by skill & certification</span>
+            </div>
+            <div class="flex items-center gap-3 mb-4">
+              <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span class="text-gray-700 font-medium">Direct candidate messaging</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span class="text-gray-700 font-medium">Unlimited outreach</span>
+            </div>
+          </div>
+          <div class="mb-6">
+            <span class="text-4xl font-bold text-gray-900">$79</span>
+            <span class="text-gray-500">/month</span>
+          </div>
+          <button id="subscribe-btn" onclick="startSubscription()" class="bg-gray-900 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-gray-800 transition-colors">
+            Subscribe Now
+          </button>
+          <p class="text-gray-400 text-sm mt-4">Secure payment powered by Stripe</p>
+        </div>
+      </div>
+
+      <!-- Premium content (hidden for free users) -->
+      <div id="premium-content" class="hidden">
+        <div class="mb-8">
+          <h1 class="text-2xl font-bold text-gray-900" id="greeting">Welcome!</h1>
+          <p class="text-gray-500 mt-1">Find and connect with skilled, certified candidates</p>
+        </div>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-3 gap-6 mb-8">
+          <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm card-hover">
+            <div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <div class="text-3xl font-bold text-gray-900" id="candidate-count">—</div>
+            <div class="text-sm text-gray-500 mt-1">Certified Candidates</div>
+          </div>
+          <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm card-hover">
+            <div class="w-10 h-10 bg-emerald-100 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <div class="text-3xl font-bold text-gray-900">10</div>
+            <div class="text-sm text-gray-500 mt-1">Skill Categories</div>
+          </div>
+          <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm card-hover">
+            <div class="w-10 h-10 bg-amber-100 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8"/></svg>
+            </div>
+            <div class="text-3xl font-bold text-gray-900" id="sent-count">—</div>
+            <div class="text-sm text-gray-500 mt-1">Messages Sent</div>
+          </div>
+        </div>
+
+        <!-- Quick actions -->
+        <div class="bg-gradient-to-br from-emerald-600 to-emerald-700 rounded-2xl p-6 text-white mb-8 card-hover">
+          <div class="flex items-center justify-between">
+            <div>
+              <h3 class="font-bold text-lg mb-1">Find Your Next Hire</h3>
+              <p class="text-emerald-100 text-sm">Search our talent database by skill, certification, or category</p>
+            </div>
+            <a href="/employer/talent.html" class="bg-white text-emerald-700 px-6 py-3 rounded-xl font-bold hover:bg-emerald-50 transition-colors whitespace-nowrap">
+              Search Talent
+            </a>
+          </div>
+        </div>
+
+        <!-- Category overview -->
+        <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6">
+          <h3 class="font-bold text-gray-900 mb-5">Skill Categories Available</h3>
+          <div class="grid grid-cols-2 md:grid-cols-5 gap-3" id="category-grid"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const token = localStorage.getItem('jm_token');
+    const user = JSON.parse(localStorage.getItem('jm_user') || '{}');
+    if (!token) window.location.href = '/login.html';
+    if (user.role !== 'employer') window.location.href = '/seeker/dashboard.html';
+
+    // Check subscription status - show paywall if not active
+    const hasActiveSubscription = user.subscription_status === 'active' || user.is_admin;
+
+    if (!hasActiveSubscription) {
+      document.getElementById('paywall').classList.remove('hidden');
+      document.getElementById('premium-content').classList.add('hidden');
+    } else {
+      document.getElementById('paywall').classList.add('hidden');
+      document.getElementById('premium-content').classList.remove('hidden');
+    }
+
+    document.getElementById('greeting').textContent = 'Welcome' + (user.company_name ? ', ' + user.company_name : '') + '!';
+    document.getElementById('user-name').textContent = user.company_name || user.email;
+    document.getElementById('sub-status').textContent = user.is_admin ? 'Admin — Full Access' : (user.subscription_status === 'active' ? 'Active Subscriber' : 'Free Plan — Subscribe Required');
+
+    if (user.is_admin) {
+      document.getElementById('admin-toggle').classList.remove('hidden');
+      updateToggleButtons('employer');
+    }
+
+    function updateToggleButtons(activeView) {
+      const seekerBtn = document.getElementById('btn-seeker-view');
+      const employerBtn = document.getElementById('btn-employer-view');
+      if (activeView === 'seeker') {
+        seekerBtn.className = 'flex-1 text-xs px-3 py-2 rounded-lg font-semibold bg-emerald-600 text-white';
+        employerBtn.className = 'flex-1 text-xs px-3 py-2 rounded-lg font-semibold bg-white text-emerald-600 border border-emerald-200 hover:bg-emerald-100';
+      } else {
+        seekerBtn.className = 'flex-1 text-xs px-3 py-2 rounded-lg font-semibold bg-white text-emerald-600 border border-emerald-200 hover:bg-emerald-100';
+        employerBtn.className = 'flex-1 text-xs px-3 py-2 rounded-lg font-semibold bg-emerald-600 text-white';
+      }
+    }
+
+    function switchView(view) {
+      localStorage.setItem('jm_admin_view', view);
+      updateToggleButtons(view);
+      if (view === 'seeker') {
+        window.location.href = '/seeker/dashboard.html';
+      }
+    }
+
+    async function startSubscription() {
+      const btn = document.getElementById('subscribe-btn');
+      btn.textContent = 'Loading...';
+      btn.disabled = true;
+
+      try {
+        const res = await fetch('/api/stripe/create-subscription-checkout', {
+          method: 'POST',
+          headers: { 'Authorization': `Bearer ${token}` }
+        });
+        const data = await res.json();
+        if (data.url) {
+          window.location.href = data.url;
+        } else {
+          alert(data.error || 'Could not initiate payment. Please try again.');
+          btn.textContent = 'Subscribe Now';
+          btn.disabled = false;
+        }
+      } catch (err) {
+        alert('Network error. Please try again.');
+        btn.textContent = 'Subscribe Now';
+        btn.disabled = false;
+      }
+    }
+
+    const categories = [
+      ['🏗️', 'Construction & Trades'], ['🔧', 'Automotive & Mechanics'],
+      ['❄️', 'HVAC & Plumbing'], ['⚡', 'Welding & Fabrication'],
+      ['🔌', 'Electrical'], ['🏥', 'Healthcare Support'],
+      ['📦', 'Logistics & Warehousing'], ['🏭', 'Manufacturing'],
+      ['💻', 'IT & Tech Support'], ['📋', 'Administrative & Office Skills']
+    ];
+
+    async function loadCategories() {
+      if (!hasActiveSubscription) return;
+      document.getElementById('category-grid').innerHTML = categories.map(([icon, label]) => `
+        <a href="/employer/talent.html?category=${encodeURIComponent(label)}" class="bg-gray-50 rounded-xl p-3 text-center hover:bg-emerald-50 hover:border-emerald-200 border border-transparent transition-all cursor-pointer block">
+          <div class="text-2xl mb-1">${icon}</div>
+          <div class="text-xs font-medium text-gray-700 leading-tight">${label}</div>
+        </a>
+      `).join('');
+    }
+
+    async function loadStats() {
+      if (!hasActiveSubscription) return;
+      const [talentRes, sentRes] = await Promise.all([
+        fetch('/api/employer/talent', { headers: { 'Authorization': `Bearer ${token}` } }),
+        fetch('/api/messages/sent', { headers: { 'Authorization': `Bearer ${token}` } })
+      ]);
+      const talent = await talentRes.json();
+      const sent = await sentRes.json();
+      document.getElementById('candidate-count').textContent = Array.isArray(talent) ? talent.length : 0;
+      document.getElementById('sent-count').textContent = Array.isArray(sent) ? sent.length : 0;
+    }
+
+    function logout() {
+      localStorage.removeItem('jm_token');
+      localStorage.removeItem('jm_user');
+      window.location.href = '/';
+    }
+
+    loadCategories();
+    loadStats();
+  </script>
+</body>
+</html>
