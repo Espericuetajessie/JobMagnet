@@ -15,7 +15,7 @@ const stripe = stripeSecret ? Stripe(stripeSecret) : null;
 const STRIPE_PUBLISHABLE_KEY = process.env.STRIPE_PUBLISHABLE_KEY || 'pk_live_51TbF9x5VOkg87t6qcZpdQsrJs8RM9PyBMGt8IRkTGGlDY4ImlUD0tIRkmoNrbB0mN3oiS04Jm4eWQFlnt7s4Qhpl004EIcBgJ7';
 
 // Hardcoded Stripe Price IDs
-const PRICE_SUBSCRIPTION = 'price_1Tbcu55VOkg87t6qzqZStwdr'; // $19/month
+const PRICE_SUBSCRIPTION = 'price_1TfITG5VOkg87t6q46XskxjI'; // $5/month
 const PRICE_TIER1 = 'price_1Tbcwl5VOkg87t6qNs4t53do'; // $19
 const PRICE_TIER2 = 'price_1Tbcy25VOkg87t6qj5eVWZz9'; // $49
 
