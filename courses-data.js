@@ -3929,7 +3929,7 @@ Many real projects use a hybrid—Waterfall for phases with well-defined scope (
         correct: 2
       }
     ]
-   },
+  },
   {
     id: 'game-show-contestant-101',
     category: 'Media & Entertainment',
