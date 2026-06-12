@@ -3929,6 +3929,1073 @@ Many real projects use a hybrid—Waterfall for phases with well-defined scope (
         correct: 2
       }
     ]
+   },
+  {
+    id: 'game-show-contestant-101',
+    category: 'Media & Entertainment',
+    title: 'Game Show Contestant Mastery — Tier 1',
+    tier: 1,
+    duration: '60 min',
+    description: 'Learn exactly how to get on and win game shows. This course covers the entire audition process, what producers look for, stage presence, and foundational knowledge to become a successful contestant.',
+    lessons: [
+      {
+        title: 'How Game Show Casting Actually Works',
+        content: `Understanding the casting process is your first step to getting on a game show. Every show has a casting department dedicated to finding contestants who will be entertaining, knowledgeable, and telegenic.
+
+**The Casting Funnel:**
+- **Application Stage**: Thousands apply, but only 5-15% move forward
+- **Video/Photo Review**: Casting directors review submissions looking for energy, personality, and camera presence
+- **Phone/Video Interview**: If selected, you'll do a brief interview to assess your personality and knowledge
+- **In-Person Audition**: The final stage usually includes a mock game and on-camera test
+- **Background Check**: All finalists are vetted before final selection
+
+**What Casting Directors Want:**
+1. **Energy and Enthusiasm** — They want someone who looks excited to be there
+2. **Personality** — Unique, memorable people who will keep viewers engaged
+3. **Knowledge** — You need to demonstrate you can answer questions competently
+4. **Story** — Every contestant needs a compelling backstory or interesting fact
+5. **Camera Presence** — You must look comfortable on camera and speak clearly
+
+**Geographic Considerations**: Many shows film in specific cities (Jeopardy in Los Angeles, Wheel of Fortune in Culver City, etc.). Being local or willing to travel at your own expense increases your chances.
+
+**Eligibility Requirements**: Most shows require you to be 18+, a US resident, and not have appeared on a similar show within the last 1-2 years. Always read the official rules before applying.`
+      },
+      {
+        title: 'How to Fill Out Applications the Right Way',
+        content: `Your application is your first impression — make it count. A well-crafted application can dramatically increase your chances of being selected.
+
+**Application Best Practices:**
+
+**Photos**: Submit high-quality, recent photos showing your personality. Include:
+- A clear headshot with good lighting
+- A full-body shot in appropriate attire
+- An "action" shot showing personality (hobbies, interests)
+- Avoid sunglasses, hats, or anything hiding your face
+
+**Written Responses**: Be specific and memorable:
+- Instead of "I like travel," write "I've visited 47 countries and once got stranded in an airport for 36 hours"
+- Include quantifiable achievements when possible
+- Use humor appropriately — casting directors read hundreds of applications
+- Be authentic — your real personality will come through on camera
+
+**The "Interesting Fact" Section**: This is crucial:
+- Avoid generic responses like "I love my family"
+- Think of what makes you unique: unusual jobs, hobbies, achievements, or experiences
+- The weirdest facts often get the best reactions from hosts
+
+**Video Submissions** (when required):
+- Keep it under 2-3 minutes
+- Start strong — introduce yourself with energy
+- Showcase your personality, not just your knowledge
+- Answer sample questions to demonstrate quick thinking
+- Good lighting and clear audio are essential
+- Practice, but don't memorize — you want to seem natural
+
+**Timing Matters**: Apply early in a season's casting cycle. Many shows cast months in advance. Follow the show's social media for casting announcements.`
+      },
+      {
+        title: 'What Producers Are Really Looking For',
+        content: `Producers have one primary goal: to create entertaining television. Understanding their priorities helps you position yourself as the ideal contestant.
+
+**The Three P's: Personality, Performance, and Polish**
+
+**Personality Trumps Knowledge**:
+- Producers will often choose a fun, engaging contestant over a trivia expert
+- Viewers connect with personalities, not encyclopedias
+- Show enthusiasm during every interaction with the production team
+
+**Performance Under Pressure**:
+- They need contestants who won't freeze on camera
+- Practice answering questions out loud under time pressure
+- Demonstrating comfort with cameras and microphones is essential
+
+**Polish and Professionalism**:
+- Respond promptly to all casting communications
+- Be flexible with scheduling — production schedules change constantly
+- Follow all instructions exactly when given
+- Show up prepared: know the show's format, rules, and history
+
+**Red Flags for Producers**:
+- Overconfidence or arrogance
+- Being too quiet or mumbling during interviews
+- Not knowing the show well (never say "I've never actually watched it")
+- Conflict or drama during the audition process
+- Being unavailable for the full tape day
+
+**What Producers Notice**:
+- How you treat everyone on set, from PAs to hosts
+- Your energy level throughout a long audition day
+- How you handle losing or making mistakes
+- Whether you follow directions precisely
+
+**The "Casting Story"**: Producers love a narrative. Think about what storyline you bring — the underdog, the expert, the quirky hobbyist, or the hometown hero.`
+      },
+      {
+        title: 'Audition Tips and What to Expect',
+        content: `The audition is your moment to shine. Knowing what happens and how to prepare gives you a major advantage.
+
+**Before the Audition:**
+- Research the show exhaustively — watch recent episodes, know the current format
+- Practice with timing — most game shows move fast
+- Prepare your "intro story" — you'll have 15-30 seconds to introduce yourself
+- Review your application so your answers match what you wrote
+- Choose your outfit carefully (covered in a later lesson)
+
+**Typical Audition Format:**
+1. **Check-in and paperwork**: Arriving early, signing releases, proof of identity
+2. **Group orientation**: Learning about the show format and expectations
+3. **Mock game**: Playing a shortened version of the actual game
+4. **On-camera test**: Answering questions while being filmed
+5. **Interview**: Brief one-on-one with a casting producer
+
+**During the Mock Game:**
+- Answer quickly but don't rush — accuracy matters more than speed
+- Be loud and clear with your answers
+- Show excitement when getting questions right
+- React authentically — producers want genuine emotions
+- Don't be discouraged by wrong answers — how you bounce back matters
+
+**Common Audition Mistakes:**
+- Second-guessing yourself out loud
+- Answering before being called on (for buzzer shows)
+- Over-explaining answers when a simple response is needed
+- Being too tense or nervous — try to have fun
+- Badmouthing other contestants or the show
+
+**After the Audition:**
+- Send a polite thank-you note if you have contact info
+- Don't pest casting staff with follow-up calls/emails
+- If you don't hear back within the stated timeframe, assume you weren't selected
+- Apply again for future seasons if allowed`
+      },
+      {
+        title: 'Stage Presence and Camera Basics',
+        content: `Looking good on camera is a learned skill. These techniques will help you appear confident and telegenic.
+
+**Body Language Fundamentals:**
+
+**Posture**: Stand tall with shoulders back and down. Imagine a string pulling the top of your head upward. Good posture projects confidence and energy.
+
+**Eye Contact**: Look directly at the camera or host when speaking. If multiple cameras are present, the floor director will indicate which one to address. Find the red recording light and make eye contact.
+
+**Hands and Gestures**:
+- Keep hands visible and relaxed at your sides when not gesturing
+- Use purposeful gestures to emphasize points
+- Avoid fidgeting, touching your face, or wringing your hands
+- Practice keeping your hands still while concentrating
+
+**Voice Techniques:**
+- Project your voice — microphones amplify but don't fix mumbling
+- Speak slightly slower than normal conversation pace
+- Vary your tone to maintain interest
+- Avoid verbal fillers like "um", "uh", and "like"
+
+**The "Breathe and Smile" Technique**:
+When nervous, take a deep breath and smile. This naturally lowers your shoulders, relaxes your face, and projects warmth. A genuine smile makes you instantly more likable on camera.
+
+**Rehearsal Tips:**
+- Record yourself practicing answers and watch the playback
+- Practice in front of a mirror to monitor expressions
+- Do mock interviews with friends who can give honest feedback
+- Time yourself to ensure your intro fits in the allotted time
+
+**Stage fright is normal** — even experienced performers get nervous. The key is to channel that energy into enthusiasm rather than tightening up.`
+      },
+      {
+        title: 'What to Wear (and What Not to Wear)',
+        content: `Your wardrobe choice can make or break your on-camera appearance. Productions often have specific guidelines, but knowing the basics helps you come prepared.
+
+**General Rules:**
+
+**Do Wear:**
+- Solid, jewel tones: deep blues, emerald greens, burgundy, rich purples
+- Colors that complement your skin tone
+- Comfortable clothes you can sit, stand, and move in
+- Layers if the studio might be cold
+- Clothes that fit well — neither tight nor baggy
+- Professional attire appropriate for the show's tone
+
+**Don't Wear:**
+- Pure white (blows out on camera)
+- Pure black (loses detail on camera)
+- Small patterns, thin stripes, or checks (cause moiré effect)
+- Busy prints or loud patterns that distract from your face
+- Excessive jewelry that might make noise
+- Clothing with visible logos or brands
+- Wrinkled or stained clothing
+
+**For Quiz/Trivia Shows** (Jeopardy, etc.):
+- Business casual: nice button-down, blouse, sweater, or blazer
+- Dress pants, slacks, or a professional skirt
+- Comfortable closed-toe shoes (feet often aren't visible)
+- Avoid looking like you're going to a job interview OR the gym
+
+**For Physical Game Shows** (Price is Right, etc.):
+- Wear bright, energetic colors
+- Comfortable clothes you can move in
+- Athletic shoes with good support
+- Avoid loose clothing that could catch on props
+
+**Hair and Makeup:**
+- Style hair away from your face
+- Avoid extreme hairstyles or colors unless that's your authentic look
+- Makeup should be natural but present — studio lights can wash you out
+- Bring touch-up items (powder, lip balm) for long production days
+
+**Always Bring Options**: Most contestants bring 2-3 outfit choices. The production team may request specific colors or styles to avoid conflicts with other contestants or set design.`
+      },
+      {
+        title: 'Common Game Show Formats & Rules',
+        content: `Understanding different game formats helps you choose which shows to pursue and how to prepare.
+
+**Quiz/Trivia Shows:**
+
+**Jeopardy!**: Knowledge + buzzer speed + wagering strategy. Three players, six categories per round, Daily Doubles hidden on the board. Key: buzzing timing matters — you can't ring in until the host finishes reading.
+
+**Who Wants to Be a Millionaire**: Ladder format with increasing difficulty. Lifelines (now called "Ask the Host" and "50/50") help with difficult questions. Key: there's no time limit for most questions, so take your time.
+
+**Wheel of Fortune**: Letter guessing + puzzle solving. You spin a wheel for dollar amounts and guess consonants. Vowels cost $250. Key: practice solving puzzles with partial information.
+
+**The Price is Right**: Pricing knowledge + luck. Contestants "Come on Down!" from the audience. Games test grocery knowledge, bidding strategy, and carnival-game skills. Key: know common grocery item prices.
+
+**Word/Puzzle Shows:**
+
+** chain reaction shows**: Build word chains by guessing connecting words. Strategy involves recognizing patterns and vocabulary.
+
+**Physical/Stunt Shows**:
+- Ninja Warrior: Athletic courses with upper body focus
+- Holey Moley: Mini golf with physical obstacles
+- Know your physical abilities and prepare accordingly
+
+**Team Shows**:
+- Family Feud: Survey-based questions, family teamwork
+- Press Your Luck: Strategy + luck, avoid "Whammies"
+- Know your team's strengths and coordinate
+
+**Key Universal Rules:**
+1. Never reveal outcomes before air date (contract violation)
+2. Judges' decisions are final
+3. Follow host instructions exactly
+4. Illegal actions can result in disqualification and lost winnings`
+      },
+      {
+        title: 'General Trivia Foundations',
+        content: `Being well-read across multiple categories improves your odds for any quiz show. Here's how to build a strong foundation.
+
+**Essential Knowledge Categories:**
+
+**Geography**: Know all 50 states and capitals, major world capitals, continent locations, oceans, major rivers, and mountain ranges. Understand time zones and their references.
+
+**History**: American history from colonization through present. Major wars and their dates. World history highlights: ancient civilizations, Renaissance, World Wars.
+
+**Science**: Basic chemistry (periodic table symbols), physics concepts, biology fundamentals, astronomy basics, scientific method.
+
+**Literature**: Classic American and British authors, famous book titles and plots, poetry basics, major literary movements.
+
+**Pop Culture**: Current music, movies, TV shows, viral trends. Also, historical pop culture: music from each decade, classic films, TV history.
+
+**Sports**: Major sports rules, championship names, famous athletes, record holders, basic statistics.
+
+**Building Your Knowledge Base:**
+
+**Daily Habits:**
+- Read news from reliable sources daily
+- Use trivia apps to practice quick recall
+- Watch Jeopardy! and play along, tracking your categories
+- Listen to podcasts on varied topics during commutes
+
+**Weekly Practice:**
+- Take online practice quizzes in weak categories
+- Review "Jeopardy! College Champion" study guides
+- Study world maps and flags
+- Learn one new topic in depth each week
+
+**The "Learn Something New" Approach**:
+When you encounter something you don't know, write it down and research it. Build connections — knowing that potassium is K helps you remember the element symbol.
+
+**Remember**: Even the best contestants don't know everything. The goal is breadth, not depth, across as many categories as possible.`
+      },
+      {
+        title: 'How to Practice Effectively at Home',
+        content: `Consistent, deliberate practice separates successful contestants from average ones. Here's how to create an effective training regimen.
+
+**Daily Practice (15-30 minutes):**
+
+**Morning**: Quick quiz on one app while having coffee
+- Recommended: Jeopardy! World Tour, Trivia HQ, Sporcle
+- Focus on categories where you're weak
+
+**Evening**: Watch and play along with actual game shows
+- Pause after each clue/question
+- Answer in full voice, not just in your head
+- Keep score to track improvement
+
+**Weekly Deep Practice (1-2 hours):**
+
+**Buzzer Practice (for buzzer shows)**:
+- Use a clicker, pen, or even a toilet-paper roll to simulate buzzer timing
+- Watch Jeopardy! and practice buzzing in after the clue ends
+- Goal: develop muscle memory for signaling
+
+**Speed Rounds**:
+- Set a timer for 60 seconds and answer rapid-fire questions
+- Practice thinking quickly: trust your first instinct
+- Have a partner read questions aloud
+
+**Mock Games**:
+- Set up complete simulations with friends or family
+- Include the full experience: intro, game, interview
+- Record yourself and review the footage
+
+**Memory Enhancement:**
+- Use mnemonics for lists: "HOMES" for Great Lakes
+- Create mental "memory palaces" for categorizing information
+- Flashcard apps like Anki for spaced repetition learning
+
+**Physical Preparation:**
+- Practice standing for long periods
+- Work on your "game face" — reactions after right/wrong answers
+- Breathwork for staying calm under pressure
+
+**Track Your Progress:**
+Keep a practice log. Note which categories you ace vs. struggle with. Monitor your buzzer timing improvement. Celebrate progress!`
+      },
+      {
+        title: 'Legal Stuff, Background Checks, and Taxes on Winnings',
+        content: `Winning money on a game show comes with important legal and financial considerations. Understanding these before you appear protects you later.
+
+**Background Checks:**
+All major game shows conduct background checks before final contestant selection. Expect checks on:
+
+- Criminal history (felonies usually disqualify)
+- Identity verification
+- Employment verification
+- Previous game show appearances
+- Social media presence
+
+**Red Flags**: Felony convictions, bankruptcy within certain timeframes, lying on applications, recent appearances on similar shows, offensive social media content.
+
+**Eligibility Restrictions:**
+- Most shows require US residency
+- 18+ age requirement (some shows 21+)
+- Usually prohibited: employees of the production company, network, sponsors, or immediate family members
+- Typically 1-2 year waiting period after appearing on other game shows
+
+**Taxes on Winnings:**
+
+**Federal**: Game show winnings are taxable as ordinary income (10-37% depending on your bracket). The show will report winnings over $600 to the IRS via Form 1099-MISC.
+
+**State**: Winnings are taxable in your home state AND in the state where the show tapes. California residents avoid double-taxation; others may owe two states.
+
+**Prize Taxes**: Non-cash prizes (cars, trips) are taxed at fair market value. If you win a $30,000 car, you owe taxes on $30,000 regardless of whether you keep it.
+
+**Smart Planning Tips:**
+1. Set aside 35-40% of winnings for taxes immediately
+2. Consider consulting a tax professional before appearing
+3. Factor in travel costs and lost wages for taping days
+4. Non-cash prizes can often be declined if the tax burden is too high
+
+**Confidentiality**: All contestants sign non-disclosure agreements. Revealing outcomes before air date can result in forfeiture of prizes and legal action.`
+      }
+    ],
+    test: [
+      {
+        question: 'What percentage of applicants typically move past the initial application stage for most game shows?',
+        options: ['1-2%', '5-15%', '25-35%', '40-50%'],
+        correct: 1
+      },
+      {
+        question: 'According to casting directors, which quality typically matters MORE for selection?',
+        options: ['Encyclopedic trivia knowledge', 'Personality and enthusiasm', 'Physical attractiveness', 'Previous TV experience'],
+        correct: 1
+      },
+      {
+        question: 'On Jeopardy!, when can you buzz in to answer?',
+        options: ['As soon as the clue appears on screen', 'Anytime during the clue reading', 'Only after the host finishes reading the clue', 'Only after all three contestants have locked in'],
+        correct: 2
+      },
+      {
+        question: 'Which of the following should you AVOID wearing on camera for a game show?',
+        options: ['Solid jewel-tone colors', 'Small checkered patterns', 'Well-fitted clothes', 'Comfortable shoes'],
+        correct: 1
+      },
+      {
+        question: 'What is the "HOMES" mnemonic used to remember?',
+        options: ['The Great Lakes', 'Types of clouds', 'European capitals', 'Periodic table elements'],
+        correct: 0
+      },
+      {
+        question: 'How are non-cash prizes (cars, trips) taxed?',
+        options: ['Not taxed at all', 'Taxed at a lower rate than cash', 'Taxed at fair market value', 'Only taxed if you sell them'],
+        correct: 2
+      },
+      {
+        question: 'What percentage of winnings should you typically set aside for taxes?',
+        options: ['10-15%', '20-25%', '35-40%', '50-55%'],
+        correct: 2
+      },
+      {
+        question: 'Which is a common reason contestants are disqualified even after being selected?',
+        options: ['Being too nervous during the audition', 'Wearing the wrong color outfit', 'Lying on their application', 'Not knowing enough trivia'],
+        correct: 2
+      },
+      {
+        question: 'What does "NDA" stand for in game show contestant agreements?',
+        options: ['No Discussion Allowed', 'Non-Disclosure Agreement', 'Non-Disqualification Assurance', 'National Digital Archive'],
+        correct: 1
+      },
+      {
+        question: 'Why might a contestant owe taxes in two different states?',
+        options: ['Federal law requires double taxation', 'Their home state AND the taping state both tax winnings', 'Game shows are always taxed twice', 'States tax contestants differently based on income'],
+        correct: 1
+      }
+    ]
+  },
+  {
+    id: 'game-show-contestant-201',
+    category: 'Media & Entertainment',
+    title: 'Game Show Contestant Mastery — Tier 2',
+    tier: 2,
+    duration: '75 min',
+    description: 'Advanced strategies for winning on game shows. Deep dives into specific show strategies, memory techniques, handling pressure, and post-win planning for maximum success.',
+    lessons: [
+      {
+        title: 'Advanced Audition Techniques',
+        content: `Once you've mastered the basics, advanced audition techniques can dramatically increase your selection odds and help you stand out from thousands of other applicants.
+
+**Building Your "Contestant Brand":**
+
+Every successful contestant has a memorable hook. When you audition, you're not just there to answer questions — you're there to create story moments producers can use.
+
+**The Story Hook Formula:**
+- Have one defining fact about yourself ready in 15 seconds
+- Include why this matters: "I've collected 5,000 Pez dispensers, which taught me to notice details quickly — perfect for spot prizes"
+- Practice your hook until it feels natural, not rehearsed
+
+**Strategic Networking:**
+- Join online communities of game show enthusiasts and past contestants
+- Attend live audition events even for shows you're not applying to (producers move between shows)
+- Follow casting directors on social media (many post tips and announcements)
+- Connect with former contestants who can share insights
+
+**Multiple Show Strategy:**
+Smart contestants apply to multiple shows simultaneously:
+- Apply to 3-5 shows in your wheelhouse
+- Space applications to avoid scheduling conflicts
+- Each audition practice makes you better for the next
+
+**The "Callback Pipeline":**
+Many experienced contestants get "called back" multiple times before being selected. If you don't get picked immediately:
+- Stay positive and maintain relationships with casting staff
+- Reapply when eligible (usually 12 months)
+- Update your application with new accomplishments
+- Continue practicing — your skills remain fresh
+
+**Psychological Positioning:**
+- Show you WANT to be there without desperation
+- Demonstrate resilience: how you handle setbacks matters
+- Reveal strategic thinking during mock games — casting loves that
+
+**The "Storytelling" Audition Approach:**
+Instead of just answering questions, frame responses as mini-narratives. "I once got locked in a library overnight — and used that time to memorize every U.S. President in order."`
+      },
+      {
+        title: 'Deep Strategy for Popular Shows (Jeopardy, Wheel, Price is Right)',
+        content: `Each major game show has unique optimal strategies. Masters know the specific approaches that maximize winning potential.
+
+**Jeopardy! Strategy:**
+
+**Board Management:**
+- Start at the bottom of categories (higher value clues)
+- Control the board as the leader to find Daily Doubles
+- As a challenger, target categories where you're strong
+- Daily Doubles are statistically more likely in rows 3-5
+
+**Buzzer Technique:**
+- The "lockout" period is 5 frames (about 0.1 seconds) after the clue ends
+- Watch the host's lips — begin pressing as the last syllable is spoken
+- Do NOT press repeatedly — you lock yourself out
+- Practice with a clicker to build muscle memory
+
+**Wagering Strategy:**
+- Always have a wager plan before the game
+- In FJ, the standard wager is: (your score - 2nd place score) + $1
+- For tie scores, wager everything or nothing (never in between)
+- In third place with low score: wager to "catch up" if both leaders miss
+
+**Daily Double Betting:**
+- First DD: When tied or behind, bet big (true Daily Double risks are often worth it)
+- Later DDs: Adjust based on game position
+- Never bet less than the clue value unless strategically necessary
+
+**Wheel of Fortune Strategy:**
+
+**Spinning vs. Solving:**
+- If you know the puzzle, SOLVE — spinning risks bankruptcy
+- Only spin when stuck and there are enough consonants left
+- Buy vowels early to confirm letters before spinning
+
+**Letter Selection:**
+- RSTLNE are given in bonus round
+- In regular play: call C, H, M, D, P early (common letters)
+- After those, look at puzzle category for hints
+
+**Category Intelligence:**
+- "Phrase" puzzles often have common sayings
+- "Thing" puzzles might be compound words
+- "Proper Name" always has a capital letter
+
+**The Price is Right Strategy:**
+
+**Contestant's Row Bidding:**
+- $1 bid: Use when you think everyone has overbid
+- Bid exactly $1 higher than someone else
+- Last bidder has advantage: can bid $1 or $1 over
+
+**Spin the Wheel:**
+- Total of 85-90 usually wins (need to leave room for a spin)
+- If you spin .05 or .15 first, strong chance of $.70+ total
+- Two small spins = stay, one large = spin again? Complex math applies`
+      },
+      {
+        title: 'Memory Techniques and Rapid Recall',
+        content: `Quiz champions aren't born with better memories — they use proven techniques. Master these methods to access knowledge instantly under pressure.
+
+**The Memory Palace Technique:**
+
+This ancient Greek method ("Method of Loci") uses spatial memory to store information:
+1. Choose a familiar place (your home)
+2. Place items to remember in specific locations mentally
+3. Create vivid, unusual images for each item
+4. Walk through mentally to recall
+
+**Example for U.S. Presidents:**
+- Imagine Washington washing clothes in your front yard
+- Jefferson playing jazz in the living room
+- Lincoln freeing a lion from your kitchen
+
+The weirder the image, the more memorable. Sex and violence stick best (use responsibly).
+
+**The Chunking Method:**
+
+Break information into digestible pieces:
+- Phone numbers: 555-867-5309 (chunks of 3-4)
+- Dates: 1776 becomes "17-76" or "Declaration of Independence"
+- Lists: Group by category, first letter, or relationship
+
+**Spaced Repetition Systems:**
+
+Apps like Anki optimize memory retention:
+1. Review new information frequently at first
+2. Gradually extend intervals as you remember
+3. Focus time on weakening memories, not strong ones
+
+**Quick Recall Exercises:**
+
+**Speed Association:**
+- See a word, instantly call out a related fact
+- "Washington" → "First president, Virginia, 1790s"
+- Build speed: reduce thinking time daily
+
+**Flashcard Racing:**
+- Set timer for 60 seconds
+- See how many cards you can answer correctly
+- Track improvement over time
+
+**Reverse Recall:**
+- Start with the answer, name the question
+- "1776" → "When was the Declaration signed?"
+- Strengthens bidirectional memory paths
+
+**The "First Letter" Memory Jog:**
+- Memorize first letters of sequences
+- "ROY G BIV" for rainbow colors
+- First letters of each president's last name in order
+
+**Handling "On the Tip of Tongue":**
+- Scan first letter sounds mentally
+- Think of related memories or contexts
+- Move on and return — the answer often surfaces`
+      },
+      {
+        title: 'Handling Pressure and Nerves on Camera',
+        content: `Even the most knowledgeable contestants can crumble under pressure. Learn to perform your best when it matters most.
+
+**Understanding Performance Anxiety:**
+
+The physiological response to stress (fight-or-flight) impairs memory and decision-making. Your goal is not to eliminate nerves, but to manage them.
+
+**Pre-Game Rituals:**
+Professional athletes and contestants use consistent rituals to create calm:
+- Same morning routine (breakfast, music, preparation)
+- Breathing exercises before taking the stage
+- Positive visualization of success
+- Power poses (hands on hips, chest open) for 2 minutes
+
+**The 4-7-8 Breathing Technique:**
+1. Breathe in through nose for 4 counts
+2. Hold breath for 7 counts
+3. Exhale slowly through mouth for 8 counts
+4. Repeat 3-4 times
+
+This activates the parasympathetic nervous system, reducing anxiety within 60 seconds.
+
+**On-Camera Strategies:**
+
+**When You Freeze:**
+- Take a breath (buying yourself a moment)
+- It's okay to say "let me think" or repeat the question
+- Trust your first instinct — overthinking causes more errors
+- One moment of silence feels longer to you than to viewers
+
+**After a Wrong Answer:**
+- Take a breath and reset
+- Don't beat yourself up visibly
+- Producers and viewers respect resilience
+- Many champions recover from early mistakes
+
+**Managing the Buzzer (for buzzer shows):**
+- Nervousness causes early or late presses
+- Consciously relax your buzzer hand
+- Focus on timing, not outcome
+- Practice while stress-testing yourself (timer, stakes)
+
+**Reframing Anxiety:**
+Research shows that naming your emotion ("I'm feeling nervous") reduces its power. Also: reframe nerves as excitement ("I'm excited to be here") — the physiological state is nearly identical.
+
+**The "Big Moment" Mindset:**
+- Focus on process, not outcome
+- You've practiced — trust your preparation
+- Win or lose, you're having an experience few people ever do
+- The worst outcome is still a great story`
+      },
+      {
+        title: 'Reading Hosts and Other Contestants',
+        content: `Success comes from understanding everyone at the table — especially your opponents. Here's how to read and respond to the humans you compete against.
+
+**Reading Your Opponents:**
+
+**Confidence Signals:**
+- Upright posture, direct eye contact = confidence
+- Leaning forward = engaged and ready
+- Quick buzzer presses = high alert
+
+**Uncertainty Signals:**
+- Looking down, touching face = doubt
+- Hesitant buzzes = unsure
+- Fidgeting = nerves
+
+**Intelligence Clues:**
+- Watching what you're watching (same category focus)
+- Reaction to other players' answers (knows if it's right?)
+- Body language when confident vs. uncertain categories
+
+**Using Opponent Reads:**
+- If opponents are uncertain, consider buzzing (they're unlikely to)
+- Watch for patterns: some always buzz on certain categories
+- Note when opponents look frustrated — might be their weak area
+
+**Reading the Host:**
+
+Most hosts maintain neutrality, but subtle tells exist:
+
+**Jeopardy! and quiz hosts:**
+- Pause before "correct" might indicate they expected different
+- Tone of "correct" vs. "yes" can reveal
+- Some hosts hint when Daily Doubles or key moments come
+
+**Game show hosts (Price is Right, etc.):**
+- Build-up before reveals = suspense tactic
+- "Are you sure?" type questions = sometimes a hint
+- Energy level suggests whether you're on track
+
+**Host Psychology:**
+- Hosts want entertaining games
+- Help the host help you — be responsive, clear, engaging
+- Build genuine rapport during contestant interviews
+- Hosts may subtly favor contestants who "play along"
+
+**Interacting with Other Contestants:**
+
+During taping breaks:
+- Be friendly but strategic
+- Share general tips, not your specific game strategy
+- Learn about their backgrounds — might reveal strengths
+- Build goodwill — you might meet them again
+
+**Post-Game Sportsmanship:**
+- Congratulate winners sincerely
+- gracious losers are often invited back
+- Avoid excuses: "I knew that!" creates bad impressions`
+      },
+      {
+        title: 'Betting/Strategy Math for Game Shows',
+        content: `Game shows are mathematical games. Understanding the math behind wagering, spinning, and risk gives you a decisive edge.
+
+**Jeopardy! Final Wagering:**
+
+**Basic Formula for Leader:**
+- Your wager = Your score - (2nd place score × 2) - 1
+- This guarantees a win if you're correct, AND if the 2nd place player gets it right and bets everything
+
+**Example:**
+- You: $15,000, 2nd: $10,000, 3rd: $5,000
+- Wager = $15,000 - ($10,000 × 2) - 1 = -$5,001 → bet $0
+- Alternative: Bet $5,001 to cover 2nd place doubling to $20,000
+
+**When in Third Place:**
+- Bet everything or enough to catch leaders if they miss
+- Calculate scenarios: What if 1st bets wrong and misses?
+
+**Daily Double Math:**
+- True Daily Double: 2x current score
+- Statistically optimal: Bet maximum when your confidence is >50%
+- Strategic: Larger bets early game, conservative bets late game
+
+**Wheel of Fortune Bonus Round:**
+
+Given letters RSTLNE, optimal additional letters to choose:
+- Typical picks: C, H, M, D, P
+- Less common but valuable: G, B, K
+- Depends on puzzle category
+
+**The Price is Right Spinning Math:**
+
+**First Spin Value Analysis:**
+- If first spin ≥ .70, stop (70% chance of winning)
+- If first spin < .70, spin again
+- Edge case: .65 with leader at .90 → always spin again
+
+**Contestant's Row Bidding Probability:**
+- Optimal: Bid $1 + actual price, or $1 over highest bid
+- Bidding $1 has ~20% success rate when others overbid
+- Being last bidder gives ~40% advantage
+
+**Game Theory Basics:**
+
+**Prisoner's Dilemma in games:**
+- In auctions/bidding games, commit to maximum willing to pay beforehand
+- Never get caught in "bidding wars" by ego
+- Calculate expected value, not just "I want to win"
+
+**Expected Value (EV) Calculation:**
+EV = (Probability of Winning) × (Prize Value) - Cost
+
+Example: 25% chance at $10,000, costs $500 to enter:
+EV = 0.25 × $10,000 - $500 = $2,500 - $500 = $2,000 (positive, worth it)`
+      },
+      {
+        title: 'Building Real Stage Charisma',
+        content: `Charisma isn't magic — it's a set of learnable behaviors that make people want to watch and root for you.
+
+**The Charisma Formula: Presence + Power + Warmth**
+
+**Presence: Being Fully There**
+- Eye contact that feels connected
+- Listening actively (not planning your next line)
+- Reacting genuinely to what happens
+- Body language that says "I'm glad to be here"
+
+**Power: Projecting Confidence**
+- Strong posture: shoulders back, chest open
+- Voice: Projected, clear, slightly lower register
+- Controlled movements: no fidgeting or nervous habits
+- Space: Take your space, don't shrink
+
+**Warmth: Likeability Factor**
+- Genuine smiles (engage your eyes, not just mouth)
+- Laughing at host jokes
+- Showing empathy for opponents
+- Authentic enthusiasm that comes through
+
+**The "Best Self" Technique:**
+
+Before appearing, identify your authentic best qualities:
+- Are you the funny one? The earnest one? The underdog?
+- Lean into your natural personality, not a fake persona
+- Audiences smell inauthenticity — be yourself amplified
+
+**Specific Charisma Hacks:**
+
+**The "Eyebrow Flash":**
+When meeting someone (or a camera), raise eyebrows slightly for a split second. This signals "I recognize you" and creates instant warmth.
+
+**The "Lean In":**
+When someone speaks, lean slightly forward. This shows engagement and makes the speaker feel valued.
+
+**The "Touch and Go":**
+Brief, appropriate touch on shoulder or arm (where culture allows) — creates connection. On camera, a touch of your own arm or chest can convey sincerity.
+
+**Mirror and Match:**
+Subtly match the host's energy level and pace. If they're high energy, amp up. If they're serious, respect that.
+
+**The Victory Moment:**
+- When winning: react first, then composed gratitude
+- Raise arms, jump, genuine surprise — producers love it
+- Thank your family/support system — heartland appeal
+
+**The "Graceful Loser":**
+- Clap for winner, smile, shake hands
+- Avoid "I knew that" or sour expressions
+- Gracious losers are often invited back for tournament play`
+      },
+      {
+        title: 'Post-Win Planning (Legal, Taxes, Publicity)',
+        content: `Winning is just the beginning. Proper planning maximizes your prize and sets you up for future opportunities.
+
+**Immediate Post-Win Steps:**
+
+**Documentation:**
+- Keep ALL paperwork from production
+- Photograph any non-cash prizes immediately
+- Note exact prize values as stated by production
+- Save all tax forms you receive
+
+**The "Waiting Period":**
+Most shows air 2-8 weeks after taping (some same-day, some months)
+- You cannot discuss outcome until it airs
+- Start planning, but don't spend money yet
+- Line up professional help (lawyer, accountant) if winnings are substantial
+
+**Legal Considerations:**
+
+**Prize Acceptance:**
+- Read all documents before signing
+- You can usually decline prizes you don't want
+- Some prizes have transfer options, others don't
+- "Cash equivalent" may be available for some non-cash prizes
+
+**Publicity Requirements:**
+- Shows own your image and story for promotional purposes
+- You may be required to do press (interviews, appearances)
+- Negotiations on publicity obligations are sometimes possible for large winners
+
+**Tax Planning:**
+
+**Federal Taxes:**
+- Winnings are ordinary income (your marginal rate + applicable brackets)
+- Estimated tax payments may be required quarterly
+- Consider adjusting W-4 withholding at your job
+- Large wins: consult tax professional before April 15
+
+**State Taxes:**
+- California taxes winners at ~9.3% (where most shows tape)
+- Plus your home state (credit for CA taxes paid may or may not apply)
+- Some states (TX, FL, etc.) have no income tax — move before winning?
+
+**Deductions:**
+- Travel, preparation costs are potentially deductible
+- Contestant "professionals" may deduct coaching, supplies
+- Consult CPA: rules are complex
+
+**Publicity Strategy:**
+
+**Social Media:**
+- Decide on your approach before the episode airs
+- Live-tweeting your own episode builds following
+- Some winners become minor celebrities — be ready
+- Lock down privacy settings on personal posts
+
+**Media Opportunities:**
+- Local news may interview you
+- Consider whether you want press or privacy
+- Game show communities will discuss your gameplay
+- YouTube reaction videos are now common
+
+**Long-Term Opportunity:**
+Some winners parlay their appearance into:
+- Speaking engagements
+- Trivia host jobs
+- Podcast appearances
+- Future TV opportunities
+- Book deals (for major winners)`
+      },
+      {
+        title: 'Networking in the Game Show World',
+        content: `The game show community is small and surprisingly connected. Building relationships can lead to future opportunities.
+
+**The Contestant Community:**
+
+**Online Forums:**
+- Reddit: r/Jeopardy, r/gamegrumps, r/trivia
+- Official show websites have forums
+- Facebook groups for past contestants
+- Discord servers for active players
+
+**What You Gain:**
+- Inside information on casting timelines
+- Tips on auditioning for specific shows
+- Support during the waiting period
+- Friends who understand the experience
+- Potential practice partners
+
+**Casting Director Relationships:**
+
+**Building Rapport:**
+- Be memorable for the right reasons (positive, prepared, professional)
+- Follow casting staff on social media professionally
+- Thank-you emails after auditions (brief, not pushy)
+- Stay visible: apply to other shows they cast
+
+**The Callback Pipeline:**
+Many contestants audition multiple times before selection:
+- Maintain your relationship with casting staff over years
+- Update them on life changes (new job, achievement, etc.)
+- Reapply enthusiastically when eligible
+- Each "no" brings you closer to "yes" with persistence
+
+**Past Contestant Connections:**
+
+**Why Connect:**
+- They can demystify the process
+- Some recommend new contestants to casting
+- They know unwritten rules and expectations
+- Guest appearances, tournaments, all-star games
+
+**How to Connect:**
+- Attend game show conventions and events
+- Reach out via social media (respectful, not demanding)
+- Many past contestants are active in online communities
+- Offer value: share your own expertise or experiences
+
+**Industry Connections:**
+
+**Beyond Contestants:**
+- Production assistants often move to other shows
+- Make friends with crew — they remember who was nice
+- Hosts sometimes recommend contestants for specials
+- Writers and researchers have input on contestant selection
+
+**Long-term Strategy:**
+Think of game shows as a community, not a one-time event:
+- Build reputation as someone great to work with
+- Stay in touch with connections after your appearance
+- Be a good sport in online discussions
+- Consider hosting or creating trivia events locally`
+      },
+      {
+        title: 'Creating Realistic Practice Simulations',
+        content: `The best practice mimics real conditions. Create training environments that prepare you for actual gameplay pressure.
+
+**Building Your Home Studio:**
+
+**Jeopardy! Practice Setup:**
+- Use online practice games (J! Archive, Jeopardy! apps)
+- Stand while playing to mimic real conditions
+- Use a clicker, pen, or buzzer substitute
+- Play with contestants: assign buzzer, keep real score
+- Wear your game-day outfit during practice
+
+**Wheel of Fortune Setup:**
+- Print puzzle boards or project them on a wall
+- Use a spinning object to simulate wheel randomness
+- Set up with family/friends to solve against timers
+- Practice "buying a vowel" and letter-calling rhythm
+
+**Price is Right Preparation:**
+- Watch episodes and bid out loud before contestants
+- Research current grocery prices (they rarely change)
+- Practice physical pricing games with household objects
+- Time yourself for quick reactions
+
+**Timed Pressure Drills:**
+
+**Speed Rounds:**
+- Set countdown timer (10-15 seconds per question)
+- Have someone read questions aloud — you answer immediately
+- Wrong answers = 0 points, no answers = penalty
+- Track accuracy under increasing time pressure
+
+**"Sudden Death" Simulations:**
+- One tough question determines win/lose
+- Practice answering with stakes (e.g., loser buys dinner)
+- Get comfortable with high-pressure moments
+
+**Buzzer Practice Methods:**
+
+**The Light Lock Trick:**
+- Jeopardy! lights activate when buzzer is "open"
+- Practice with a partner who signals when pressing is allowed
+- Build muscle memory for the "sweet spot" timing
+
+**Reaction Time Testing:**
+- Online reaction tests measure your base speed
+- Average reaction time: 250ms
+- Elite buzzer speed: 150-200ms
+- Practice daily to improve
+
+**Full Game Rehearsals:**
+
+**Weekly Game Nights:**
+- Invite trivia-loving friends
+- Rotate who "hosts" to practice varied hosting styles
+- Record sessions and review your performance
+- Vary quiz categories to simulate real distribution
+
+**Competition Practice:**
+- Join local trivia leagues
+- Enter pub trivia tournaments regularly
+- Competitions acclimate you to pressure with strangers
+- Winning local competitions proves your readiness
+
+**The "Pre-Show" Ritual Practice:**
+- Practice your full pre-game routine in simulation
+- Same foods, same warm-up, same mental prep
+- When the real show comes, it feels familiar`
+      }
+    ],
+    test: [
+      {
+        question: 'In Jeopardy!, where are Daily Doubles statistically most likely to be located?',
+        options: ['In the $200 row', 'In the $400 row', 'In rows 3-5 (middle to bottom)', 'Evenly distributed across all rows'],
+        correct: 2
+      },
+      {
+        question: 'When leading in Jeopardy! Final, the standard safe wager formula is:',
+        options: ['Everything you have', 'Double the second place score', 'Your score minus (2nd place score × 2) minus $1', 'Zero — always guarantee a tie'],
+        correct: 2
+      },
+      {
+        question: 'On Wheel of Fortune, what are the six letters given to you automatically in the bonus round?',
+        options: ['R, S, T, L, N, E', 'A, E, I, O, U, Y', 'C, D, H, M, P, B', 'J, K, Q, X, Z, W'],
+        correct: 0
+      },
+      {
+        question: 'The "Memory Palace" technique relies on what type of memory?',
+        options: ['Auditory memory', 'Spatial memory', 'Muscle memory', 'Emotional memory'],
+        correct: 1
+      },
+      {
+        question: 'The 4-7-8 breathing technique activates which nervous system?',
+        options: ['Sympathetic nervous system (fight-or-flight)', 'Parasympathetic nervous system (calm)', 'Central nervous system', 'Somatic nervous system'],
+        correct: 1
+      },
+      {
+        question: 'In The Price is Right "Contestant\'s Row", what is the optimal bidding strategy as the last bidder?',
+        options: ['Bid the exact price you think it is', 'Bid $1 over the highest bid or just $1', 'Bid the maximum you think it could be', 'Always bid $1,000'],
+        correct: 1
+      },
+      {
+        question: 'What is the "Eyebrow Flash" technique used for in building charisma?',
+        options: ['To show dominance over opponents', 'To signal recognition and create instant warmth', 'To distract the host during gameplay', 'To improve buzzer timing'],
+        correct: 1
+      },
+      {
+        question: 'In The Price is Right wheel spinning, if your first spin lands on .70 or higher, the optimal strategy is:',
+        options: ['Spin again to try for $1.00', 'Stop (you have a ~70% chance of winning)', 'Always spin exactly twice', 'Let someone else spin for you'],
+        correct: 1
+      },
+      {
+        question: 'Why might a game show winner owe taxes in two different states?',
+        options: ['Federal law requires it for prizes over $10,000', 'Their home state plus the taping state both tax winnings', 'All game show winnings are double-taxed', 'Only million-dollar winners pay multiple state taxes'],
+        correct: 1
+      },
+      {
+        question: 'What is "Expected Value" (EV) in game show context?',
+        options: ['The average score you\'ll get', 'Prize probability multiplied by value minus cost', 'The minimum you\'re guaranteed to win', 'The host\'s predicted rating for your episode'],
+        correct: 1
+      }
+    ]
   }
 ];
 
